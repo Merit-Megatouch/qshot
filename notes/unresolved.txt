@@ -1,0 +1,69 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+NetGlob | qshot.so
+WhoWeArePlaying | qshot.so
+LinkWait_End() | qshot.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | qshot.so
+Heartbeat_Check(int, int) | qshot.so
+ScreenIsTouched() | qshot.so
+LinkWait_Advance(int) | qshot.so
+Heartbeat_WaitForAll(unsigned long, bool) | qshot.so
+MeritthonDisplayRound(int, int, int, unsigned long) | qshot.so
+t_i_l() | qshot.so
+GetMyId() | qshot.so
+u_m_m_s(char const*, char*, char*, unsigned int) | qshot.so
+GetMaster() | qshot.so
+NetGlobals::ProcNetClicks() | qshot.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | qshot.so
+NetGlobals::GetScore(int) | qshot.so
+QueryPopup::Result() | qshot.so
+QueryPopup::Activate() | qshot.so
+QueryPopup::Finished() | qshot.so
+QueryPopup::QueryPopup(float, float, float, char*, int, int, int, int, float, float, char*, float, float, char*, float, float, float, float, char*, float, float, char*, char*, char*, float, float, char*, char*, char*, int, int, int, char*, char*, char*, int, int, unsigned long, char*, unsigned long, unsigned long, bool, unsigned short) | qshot.so
+Translator::nTranslate(char*, unsigned int, char const*) | qshot.so
+WorldClass::SetBack(short) | qshot.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | qshot.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | qshot.so
+WorldClass::WorldClass() | qshot.so
+SystemClass::WaitTouch(long) | qshot.so
+system_info::Get_Motherboard_Type() | qshot.so
+MouseManager::SetDebounce(int) | qshot.so
+MouseManager::Pop() | qshot.so
+MouseManager::Push() | qshot.so
+NetSpriteLock::SendPacket(unsigned char) | qshot.so
+NetSpriteLock::SendPacketLock(unsigned char, unsigned long) | qshot.so
+NetSpriteLock::SendAck(unsigned char) | qshot.so
+NetSpriteLock::NetSpriteLock(Bitmap*, unsigned short, unsigned char, unsigned short) | qshot.so
+NetSpriteLock::~NetSpriteLock() | qshot.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | qshot.so
+Books::Instance() | qshot.so
+USBIO::FoundUSB() | qshot.so
+Bitmap::CopyFromScreen(int, int, bool) | qshot.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | qshot.so
+Bitmap::SmackAnimationAdvance(unsigned char) | qshot.so
+Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | qshot.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | qshot.so
+Bitmap::GreyBmp() | qshot.so
+Bitmap::LoadTGA(char*, int) | qshot.so
+Bitmap::LoadSmack(char*, unsigned char, unsigned char) | qshot.so
+Sprite::DoNextFrame() | qshot.so
+Sprite::SpriteClick() | qshot.so
+Sprite::Reset() | qshot.so
+Sprite::DoDraw() | qshot.so
+Sprite::Signal(Group::SpriteSignalType) | qshot.so
+Sprite::Signal(SpriteSignal*) | qshot.so
+Sprite::Message(Group::SpriteSignalType) | qshot.so
+Sprite::Message(SpriteSignal*) | qshot.so
+Sprite::DoCommand(int) | qshot.so
+NetTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | qshot.so
+NetTimer::NetClick(unsigned char) | qshot.so
+NetTimer::NetTimer(unsigned long, unsigned long, unsigned char, unsigned short, bool) | qshot.so
+NetTimer::~NetTimer() | qshot.so
+typeinfo for NetSpriteLock | qshot.so
+typeinfo for NetTimer | qshot.so
+vtable for DOSLinuxWorld | qshot.so
+clear_bitmap | qshot.so
+gfx_driver | qshot.so
+screen | qshot.so
