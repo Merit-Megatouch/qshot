@@ -2,7 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-Heartbeat_WaitForAll(unsigned long, bool) | qshot.so
 t_i_l() | qshot.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | qshot.so
 NetGlobals::GetScore(int) | qshot.so
