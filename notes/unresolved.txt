@@ -3,7 +3,6 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 t_i_l() | qshot.so
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | qshot.so
 NetGlobals::GetScore(int) | qshot.so
 QueryPopup::Result() | qshot.so
 QueryPopup::Activate() | qshot.so
